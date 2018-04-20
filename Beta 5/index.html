@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Piú</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="java/jquery-3.3.1.js"></script>
+    <script src="java/bootstrap.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+  <div id="registeroverlay">
+    <div id="register">
+      <h1 style="display:inline-block;">Registrieren</h1><i id="closeregister" onclick="registerabort()" class="fa fa-close"></i>
+      <form action="includes/signup.inc.php" method="post">
+      <input type="text" class="logintextbox" name="vor" placeholder="Vorname" required>
+      <input type="text" class="logintextbox" name="nach" placeholder="E-Mail" required>
+      <input type="email" class="logintextbox" name="email" placeholder="Passwort" required>
+      <input type="password" class="logintextbox" name="pwt" placeholder="Passowort" required>
+      <input type="submit" class="button" value="Registrieren">
+    </form>
+    </div>
+  </div>
+    <div id="nav">
+      <img src="img/logo.png" id="logo">
+      <h1 id="title">Piú</h1>
+      <i title="Anmelden" id="log" onclick="login()" class="fa fa-user-circle-o"></i>
+    </div>
+    <div id="logindiv">
+      <form method="post" action="#">
+        <h1>Anmelden</h1>
+        <input type="email" class="logintextbox" name="email" placeholder="E-Mail" required>
+        <input type="password" class="logintextbox" name="password" placeholder="Passwort" required>
+        <input type="submit" class="button" value="Anmelden">
+      </form>
+      <p style="font-size:15px;">Noch kein Account? Registriere dich <a onclick="register()">hier!</a></p>
+    </div>
+    <div id="sign">
+      <h1 class="sign" id="topsign">BE MORE</h1>
+      <div id="wb"></div>
+      <h1 class="sign butsing">BE PIÚ</h1>
+      <i id="searchicon"  class="fa fa-search" onclick="search()"></i>
+      <input id="search" type="text" placeholder="Suche">
+    </div>
+    <div id="site">
+      <div id="content">
+        <h1>Kategorien</h1>
+        <center><button class="categorybutton">Hoodies</button><button class="categorybutton">T-Shirts</button><button class="categorybutton">Hosen</button><button class="categorybutton">Schuhe</button></center>
+        <div id="about">
+          <h1 id="aboutheader">Entdecke Piú</h1>
+          <img src="img/jeans.jpg" id="aboutimg">
+          <p id="abouttext">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div id="products">
+
+        </div>
+      </div>
+    </div>
+    <script src="java/js.js"></script>
+  </body>
+</html>
